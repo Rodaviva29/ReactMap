@@ -3,7 +3,7 @@ services:
     # Built from this repo's Dockerfile instead of the upstream image, so the
     # *.custom.jsx overrides and the pt-br locale are baked in at build time.
     build:
-      context: .
+      context: /home/pokelx/reactmap/production/
       dockerfile: Dockerfile
     container_name: reactmap
     # The Dockerfile defines no CMD, so the start command lives here.
