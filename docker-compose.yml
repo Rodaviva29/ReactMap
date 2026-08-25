@@ -10,8 +10,8 @@ services:
       # Optional
       - /home/pokelx/reactmap/production/public/favicon/favicon.ico:/home/node/public/favicon/favicon.ico
 
-      - /home/pokelx/reactmap/production/server/src/pages/map/components/FloatingBtn.custom.jsx:/home/node/server/src/pages/map/components/FloatingBtn.custom.jsx 
-      - /home/pokelx/reactmap/production/server/src/features/drawer/components/Actions.custom.jsx:/home/node/server/src/features/drawer/components/Actions.custom.jsx
+      - /home/pokelx/reactmap/production/src/pages/map/components/FloatingBtn.custom.jsx:/home/node/src/pages/map/components/FloatingBtn.custom.jsx 
+      - /home/pokelx/reactmap/production/src/features/drawer/components/Actions.custom.jsx:/home/node/src/features/drawer/components/Actions.custom.jsx
       - /home/pokelx/reactmap/production/packages/locales/lib/human/pt-br.json:/home/node/packages/locales/lib/human/pt-br.json
 
     security_opt:
