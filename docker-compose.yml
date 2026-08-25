@@ -1,0 +1,39 @@
+services:
+  reactmap:
+    image: ghcr.io/watwowmap/reactmap:main
+    container_name: reactmap
+    command: sh -c "yarn start"
+    restart: unless-stopped
+    volumes:
+      - /home/pokelx/reactmap/production/server/.cache:/home/node/server/.cache
+      - /home/pokelx/reactmap/production/server/src/configs:/home/node/server/src/configs
+      # Optional
+      - /home/pokelx/reactmap/production/public/favicon/favicon.ico:/home/node/public/favicon/favicon.ico
+
+      - /home/pokelx/reactmap/production/server/src/pages/map/components/FloatingBtn.custom.jsx:/home/node/server/src/pages/map/components/FloatingBtn.custom.jsx 
+      - /home/pokelx/reactmap/production/server/src/features/drawer/components/Actions.custom.jsx:/home/node/server/src/features/drawer/components/Actions.custom.jsx
+      - /home/pokelx/reactmap/production/packages/locales/lib/human/pt-br.json:/home/node/packages/locales/lib/human/pt-br.json
+
+    security_opt:
+      # https://nodramadevops.com/2019/06/running-docker-application-containers-more-securely/
+      - no-new-privileges:true
+
+    ports:
+      - '127.0.0.1:9556:9556'
+
+  reactmap-develop:
+    image: ghcr.io/watwowmap/reactmap:develop
+    container_name: reactmap-develop
+    command: sh -c "yarn start"
+    restart: unless-stopped
+
+    volumes:
+      - /home/pokelx/reactmap/production/server/.cache:/home/node/server/.cache
+      - /home/pokelx/reactmap/production/server/src/configs:/home/node/server/src/configs
+
+    security_opt:
+      # https://nodramadevops.com/2019/06/running-docker-application-containers-more-securely/
+      - no-new-privileges:true
+
+    ports:
+      - '127.0.0.1:9557:9557'

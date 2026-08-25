@@ -126,7 +126,7 @@ export function DrawerActions() {
       ) && (
         <BasicListButton
           component="a"
-          href="https://github.com/WatWowMap/ReactMap"
+          href="https://pokelx.com"
           referrerPolicy="no-referrer"
           target="_blank"
           rel="noreferrer"

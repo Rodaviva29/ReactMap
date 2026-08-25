@@ -15,7 +15,6 @@ server/src/data/masterfile.json
 packages/masterfile/lib/data/masterfile.json
 
 # Docker file
-/docker-compose.yml
 .gitref
 .gitsha
 
@@ -74,7 +73,6 @@ Desktop.ini
 *~
 
 # Custom Files
-src/**/*.custom.jsx
 src/**/*.custom.js
 src/**/*.custom.css
 .idea/
