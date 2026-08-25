@@ -1,19 +1,18 @@
 services:
   reactmap:
-    # Built from this repo's Dockerfile instead of the upstream image, so the
-    # *.custom.jsx overrides and the pt-br locale are baked in at build time.
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/watwowmap/reactmap:main
     container_name: reactmap
-    # The Dockerfile defines no CMD, so the start command lives here.
     command: sh -c "yarn start"
     restart: unless-stopped
     volumes:
       - /home/pokelx/reactmap/production/server/.cache:/home/node/server/.cache
       - /home/pokelx/reactmap/production/server/src/configs:/home/node/server/src/configs
-      # Optional - favicon.ico is gitignored, so it still comes from the host.
+      # Optional
       - /home/pokelx/reactmap/production/public/favicon/favicon.ico:/home/node/public/favicon/favicon.ico
+
+      - /home/pokelx/reactmap/production/src/pages/map/components/FloatingBtn.custom.jsx:/home/node/src/pages/map/components/FloatingBtn.custom.jsx 
+      - /home/pokelx/reactmap/production/src/features/drawer/components/Actions.custom.jsx:/home/node/src/features/drawer/components/Actions.custom.jsx
+      - /home/pokelx/reactmap/production/packages/locales/lib/human/pt-br.json:/home/node/packages/locales/lib/human/pt-br.json
 
     security_opt:
       # https://nodramadevops.com/2019/06/running-docker-application-containers-more-securely/
