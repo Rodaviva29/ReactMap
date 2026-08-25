@@ -4,18 +4,19 @@ services:
     container_name: reactmap
     command: sh -c "yarn start"
     restart: unless-stopped
+
     volumes:
       - /home/pokelx/reactmap/production/server/.cache:/home/node/server/.cache
       - /home/pokelx/reactmap/production/server/src/configs:/home/node/server/src/configs
+
       # Optional
       - /home/pokelx/reactmap/production/public/favicon/favicon.ico:/home/node/public/favicon/favicon.ico
-
-      - /home/pokelx/reactmap/production/src/pages/map/components/FloatingBtn.custom.jsx:/home/node/src/pages/map/components/FloatingBtn.custom.jsx 
+      - /home/pokelx/reactmap/production/src/pages/map/components/FloatingBtn.custom.jsx:/home/node/src/pages/map/components/FloatingBtn.custom.jsx
       - /home/pokelx/reactmap/production/src/features/drawer/components/Actions.custom.jsx:/home/node/src/features/drawer/components/Actions.custom.jsx
       - /home/pokelx/reactmap/production/packages/locales/lib/human/pt-br.json:/home/node/packages/locales/lib/human/pt-br.json
+      - /home/pokelx/reactmap/production/src/pages/map/dialogs/LaunchApp.js:/home/node/src/pages/map/dialogs/LaunchApp.js
 
     security_opt:
-      # https://nodramadevops.com/2019/06/running-docker-application-containers-more-securely/
       - no-new-privileges:true
 
     ports:
