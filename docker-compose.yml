@@ -28,8 +28,8 @@ services:
     restart: unless-stopped
 
     volumes:
-      - /home/pokelx/reactmap/production/server/.cache:/home/node/server/.cache
-      - /home/pokelx/reactmap/production/server/src/configs:/home/node/server/src/configs
+      - /home/pokelx/reactmap/development/server/.cache:/home/node/server/.cache
+      - /home/pokelx/reactmap/development/server/src/configs:/home/node/server/src/configs
 
     security_opt:
       # https://nodramadevops.com/2019/06/running-docker-application-containers-more-securely/
