@@ -1,3 +1,20 @@
+## [1.51.2](https://github.com/WatWowMap/ReactMap/compare/v1.51.1...v1.51.2) (2026-09-24)
+
+
+### Bug Fixes
+
+* form collapsing for grunt reward ([79e7839](https://github.com/WatWowMap/ReactMap/commit/79e783979b92c956120a15bff248e6b13ab25b63))
+* fort timestamp layout ([a408745](https://github.com/WatWowMap/ReactMap/commit/a408745739c5bf43d6277acdc35b51785430cd55))
+* revoke access ([63c98ba](https://github.com/WatWowMap/ReactMap/commit/63c98baa13c943b2c9584e4399e8db82f5aab888)), closes [#1254](https://github.com/WatWowMap/ReactMap/issues/1254)
+
+## [1.51.1](https://github.com/WatWowMap/ReactMap/compare/v1.51.0...v1.51.1) (2026-08-27)
+
+
+### Bug Fixes
+
+* **map:** remove legacy Carto tile fallback ([e7d6a87](https://github.com/WatWowMap/ReactMap/commit/e7d6a871313ac8cbb33f9c5949d4bc513637ec8a))
+* remove carto tiles from default.json ([9891234](https://github.com/WatWowMap/ReactMap/commit/9891234b072b0f0fb30f8dbbd094cdbf9d5db87f))
+
 # [1.51.0](https://github.com/WatWowMap/ReactMap/compare/v1.50.2...v1.51.0) (2026-08-25)
 
 
