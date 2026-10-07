@@ -1,3 +1,36 @@
+## [1.53.1](https://github.com/WatWowMap/ReactMap/compare/v1.53.0...v1.53.1) (2026-10-04)
+
+
+### Bug Fixes
+
+* unknown station boss leaking all raid eggs ([5c7f260](https://github.com/WatWowMap/ReactMap/commit/5c7f260c6309e64714411791e03be9de96f483f4))
+
+# [1.53.0](https://github.com/WatWowMap/ReactMap/compare/v1.52.0...v1.53.0) (2026-10-02)
+
+
+### Bug Fixes
+
+* apply to all applies to future ([77e7d09](https://github.com/WatWowMap/ReactMap/commit/77e7d0913bfabfd3a836cebfd3c1dd05b5fb9456))
+
+
+### Features
+
+* allow exclude upcoming for all stations ([1fc870d](https://github.com/WatWowMap/ReactMap/commit/1fc870d94bc0e3a53010367e213e18af399c3b27))
+
+# [1.52.0](https://github.com/WatWowMap/ReactMap/compare/v1.51.4...v1.52.0) (2026-09-30)
+
+
+### Features
+
+* **auth:** support Telegram OAuth (OpenID Connect) ([25938dd](https://github.com/WatWowMap/ReactMap/commit/25938dd6de4a7f1be85984c5a3a676c69fed8145))
+
+## [1.51.4](https://github.com/WatWowMap/ReactMap/compare/v1.51.3...v1.51.4) (2026-09-30)
+
+
+### Bug Fixes
+
+* **api:** enforce server-side perms on single-entity queries ([9922240](https://github.com/WatWowMap/ReactMap/commit/99222407839e6ec2d626bd3f0f61a05edf6204ac))
+
 ## [1.51.3](https://github.com/WatWowMap/ReactMap/compare/v1.51.2...v1.51.3) (2026-09-29)
 
 
